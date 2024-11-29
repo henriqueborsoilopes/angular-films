@@ -1,0 +1,23 @@
+<div *ngIf="details" class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg border-light rounded">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img [src]="details.Poster" class="img-fluid rounded-start" alt="Poster">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title text-center text-primary">{{ details.Title }}</h2>
+                <p class="card-text">{{ details.Plot }}</p>
+                <div class="d-flex justify-content-center mt-4">
+                  <button class="btn btn-success w-50" (click)="addToFavorites()">Adicionar aos Favoritos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
